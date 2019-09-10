@@ -1,0 +1,102 @@
+msg: Today's Practice
+print_full_stats: True
+subsets:
+  - msg: Warmup
+    time: 15:00
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: 200
+        stroke: free
+        time: :00
+      - distance: 100
+        stroke: im
+        time: :00
+      - distance: 200
+        stroke: free
+        msg: pull
+        time: :00
+      - distance: 100
+        stroke: kick
+        time: :00
+
+  - msg: Preset
+    print_full_stats: True
+    msg: Your choice of stroke
+    subsets:
+      - distance: 75
+        rounds: 4
+        stroke: choice
+        msg: kick / drill / swim by 25
+        additional_base: 0:15
+      - distance: 50
+        rounds: 3
+        stroke: choice
+        msg: drill / swim by 25
+        additional_base: 0:10
+      - distance: 25
+        rounds: 2
+        stroke: choice
+        msg: 1st half fast half easy / 2nd half easy half fast
+        additional_base: 0:10
+
+  - msg: Main Set
+    print_full_stats: True
+    subsets:
+      - distance: [400, 400, 300, 300]
+        rounds: 1
+        stroke: free
+        additional: 0:15
+      - distance: 50
+        rounds: [4, 4, 3, 3]
+        stroke: free
+        additional: 0:15
+        msg: descend
+      - distance: [300, 300, 300, 200]
+        rounds: 1
+        stroke: free
+        additional: 0:15
+      - distance: 50
+        rounds: [3, 3, 3, 2]
+        stroke: free
+        additional: 0:10
+        msg: descend
+      - distance: 200
+        rounds: 1
+        stroke: free
+        additional: 0:10
+      - distance: 50
+        rounds: 2
+        stroke: free
+        msg: fast!
+        additional: 0:05
+      - distance: 50
+        stroke: free
+        msg: easy
+        additional: 0:20
+      - distance: 100
+        rounds: 1
+        stroke: free
+      - distance: 50
+        rounds: 1
+        stroke: free
+        msg: fast!
+      - distance: 50
+        stroke: free
+        msg: easy
+        additional: 0:20
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    rounds: 2
+    subsets:
+      - distance: 75
+        stroke: free
+        msg: Breathe every 3, 5, 7 strokes, by 25
+        additional: 0:30
+      - distance: 50
+        stroke: stroke
+        msg: Double arm backstroke
+      - distance: 25
+        msg: scull
+        time: 1:00
