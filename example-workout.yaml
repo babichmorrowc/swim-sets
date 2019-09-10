@@ -1,26 +1,110 @@
 msg: Today's Practice
 print_full_stats: True
 subsets:
-  - msg: Main Set
+  - msg: Warmup
+    time: 15:00
     print_full_stats: True
-    rounds: 5
+    rounds: 1
     subsets:
-      - distance: 150
-        rounds: [5, 5, 5, 4]
+      - distance: 200
         stroke: free
-        additional_base: -0:05
-      - distance: 100
-        rounds: 4
-        stroke: im
-        additional_base: 0:10
         time: :00
-      - distance: 75
+      - distance: 100
+        rounds: 2
+        stroke: choice
+        msg: kick/swim by 50
+        time: :00
+      - distance: 50
+        rounds: 4
         stroke: free
         msg: pull
-        rounds: 3
+        time: :00
+
+  - msg: Preset
+    print_full_stats: True
+    subsets:
+      - distance: 100
+        stroke: stroke
+        msg: Fly - 25 right arm / 25 swim / 25 left arm / 25 swim
+        additional_base: 0:15
+      - distance: 50
+        stroke: stroke
+        msg: Fly - build
+        additional_base: 0:15
       - distance: 25
-        stroke: ez
-      - distance:  [100, 100, 50, 50]
-        stroke: kick
-        additional: 0:15
         rounds: 2
+        stroke: stroke
+        msg: Fly - fast/ez, ez/fast
+        additional_base: 0:30
+      - distance: 100
+        stroke: stroke
+        msg: Backstroke - 25 right arm / 25 swim / 25 left arm / 25 swim
+        additional_base: 0:15
+      - distance: 50
+        stroke: stroke
+        msg: Backstroke - build
+        additional_base: 0:15
+      - distance: 25
+        rounds: 2
+        stroke: stroke
+        msg: Backstroke - fast/ez, ez/fast
+        additional_base: 0:30
+      - distance: 100
+        stroke: stroke
+        msg: Breaststroke - 25 breaststroke pull w/ fly kick / 25 swim
+        additional_base: 0:15
+      - distance: 50
+        stroke: stroke
+        msg: Breaststroke - build
+        additional_base: 0:15
+      - distance: 25
+        rounds: 2
+        stroke: stroke
+        msg: Breaststroke - fast/ez, ez/fast
+        additional_base: 0:30
+
+  - msg: Main Set
+    print_full_stats: True
+    subsets:
+      - distance: [400, 400, 300, 200]
+        stroke: im
+        msg: 100 IM / 100 free
+        additional: 0:10
+      - distance: 50
+        stroke: stroke
+        rounds: [3, 3, 3, 2]
+        msg: Free, descend
+        additional: 0:05
+      - distance: [300, 300, 200, 200]
+        stroke: im
+        msg: 100 IM swim / 100 IM drill
+        additional: 0:10
+      - distance: 50
+        stroke: stroke
+        rounds: [3, 3, 3, 2]
+        msg: Breaststroke, descend
+        additional: 0:10
+      - distance: [200, 200, 200, 100]
+        stroke: im
+        additional: 0:10
+      - distance: 50
+        stroke: stroke
+        rounds: [3, 3, 3, 2]
+        msg: Backstroke, descend
+        additional: 0:10
+      - distance: 100
+        stroke: im
+        additional: 0:10
+      - distance: 50
+        stroke: stroke
+        rounds: [3, 3, 3, 2]
+        msg: Fly, descend
+        additional: 0:10
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    subsets:
+      - distance: 50
+        rounds: 4
+        msg: Odds - 3 turn; evens - scull/swim
+        time: [1:00, 1:05, 1:10, 1:15]
