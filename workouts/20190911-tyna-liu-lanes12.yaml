@@ -35,19 +35,44 @@ subsets:
 
   - msg: Main Set
     print_full_stats: True
-    rounds: 3
+    rounds: 1
     subsets:
-      - distance: 200
+      - distance: [300, 300, 300, 200]
         rounds: 1
         stroke: free
         additional_base: 0:10
         msg: "ladder breathing"
       - distance: 100
-        rounds: 2
+        rounds: [3, 3, 3, 2]
         stroke: stroke
         msg: 25 free / 25 non-free
-      - distance: 50
-        rounds: [4, 4, 4, 3]
+      - distance: [200, 200, 200, 100]
+        rounds: 1
+        stroke: free
+        additional_base: 0:10
+        msg: drill / swim
+      - distance: 100
+        rounds: [2, 2, 2, 1]
+        stroke: stroke
+        msg: 25 free / 25 non-free
+      - distance: 100
+        rounds: 1
+        stroke: free
+      - distance: [200, 200, 200, 100]
+        rounds: 1
+        stroke: stroke
+        msg: drill / swim
+        additional_base: 0:10
+      - distance: 100
+        rounds: [2, 2, 2, 1]
+        stroke: free
+      - distance: [300, 300, 300, 200]
+        rounds: 1
+        stroke: stroke
+        msg: kick / drill / swim
+        additional_base: 0:10
+      - distance: 100
+        rounds: [3, 3, 3, 2]
         stroke: free
 
 
