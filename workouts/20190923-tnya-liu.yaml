@@ -1,0 +1,66 @@
+msg: Today's Practice
+print_full_stats: True
+subsets:
+  - msg: Warmup
+    time: 15:00
+    print_full_stats: True
+    subsets:
+      - distance: 300
+        stroke: free
+        time: :00
+      - distance: 100
+        stroke: kick
+        time: :00
+      - distance: 100
+        stroke: free
+        msg: pull
+        time: :00
+      - distance: 50
+        rounds: 4
+        stroke: choice
+        msg: Odds - kick / swim, Evens - drill / swim
+        time: :00
+
+  - msg: Preset
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: 25
+        stroke: free
+        rounds: 4
+        msg: streamline off wall as far as possible
+        time: [:35, :40, :45, :50]
+      - distance: 50
+        stroke: free
+        rounds: 4
+        msg: 2 UW kicks off each wall / 3 UW kicks / 4 UW kicks / 5 UW kicks
+
+  - msg: Main Set
+    print_full_stats: True
+    rounds: 4
+    subsets:
+      - distance: 75
+        rounds: [4, 4, 2, 2]
+        stroke: free
+        msg: good underwaters
+        additional_base: 0:15
+      - distance: 25
+        rounds: 4
+        stroke: choice
+        msg: variable
+        time: [:35, :40, :45, :50]
+      - distance: 50
+        rounds: [2, 2, 2, 1]
+        stroke: choice
+        msg: build to FAST turn
+
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    time: 5:00
+    subsets:
+      - distance: 50
+        msg: kick / swim, scull / swim 15 sec rest
+        stroke: choice
+        rounds: 4
+        time: 0:00

@@ -1,0 +1,79 @@
+msg: Today's Practice
+print_full_stats: True
+subsets:
+  - msg: Warmup
+    time: 12:00
+    print_full_stats: True
+    subsets:
+      - distance: 500
+        stroke: free
+        time: :00
+        msg: Swim / Kick / IM / Pull / Swim by 100
+
+  - msg: Preset
+    print_full_stats: True
+    rounds: 3
+    subsets:
+      - distance: 100
+        stroke: stroke
+        rounds: 1
+        msg: drill
+        additional_base: :10
+      - distance: 50
+        stroke: stroke
+        rounds: 2
+        msg: 1 - fast / easy, 2 - easy / fast
+        additional_base: :10
+      - distance: 25
+        stroke: stroke
+        rounds: 4
+        msg: descend 1 - 4
+        time: [:40, :40, :45, :50]
+
+  - msg: Main Set
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: [300, 300, 200, 200]
+        rounds: 1
+        stroke: free
+        msg: breathe 3 / 5 / 7 by 25
+        additional_base: 0:10
+      - distance: 50
+        rounds: [8, 8, 5, 5]
+        stroke: choice
+        msg: 1 fast (stroke) /  3 smooth (25 stroke / 25 free)
+      - distance: [200, 200, 150, 100]
+        rounds: 1
+        stroke: free
+        msg: ladder breathing
+        additional_base: 0:10
+      - distance: 50
+        rounds: [6, 6, 4, 4]
+        stroke: choice
+        msg: 1 fast (stroke) / 2 smooth (25 stroke / 25 free)
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: free
+        msg: drill / swim
+        additional_base: 0:10
+      - distance: 50
+        rounds: [4, 4, 3, 3]
+        stroke: choice
+        msg: 1 fast (stroke) / 1 smooth (25 stroke / 25 free)
+
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    rounds: 2
+    subsets:
+      - distance: 50
+        stroke: free
+        msg: perfect form
+        additional: '0:30'
+      - distance: 25
+        msg: scull
+        time: '1:00'
+      - distance: 25
+        msg: double arm backstroke
+        time: '1:00'
