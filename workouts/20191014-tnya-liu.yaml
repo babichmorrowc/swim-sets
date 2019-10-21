@@ -1,0 +1,62 @@
+msg: Today's Practice
+print_full_stats: True
+subsets:
+  - msg: Warmup
+    time: 15:00
+    print_full_stats: True
+    subsets:
+      - distance: 200
+        stroke: free
+        time: :00
+      - distance: 50
+        rounds: 4
+        stroke: choice
+        msg: kick / swim
+        time: :00
+      - distance: 200
+        stroke: im
+        msg: drill / swim
+        time: :00
+      - distance: 50
+        rounds: 4
+        stroke: free
+        msg: descend 1-4
+        time: :00
+
+  - msg: Preset
+    print_full_stats: True
+    rounds: 2
+    subsets:
+      - distance: 25
+        stroke: choice
+        rounds: 8
+        msg: kick / swim / drill / swim
+        additional: :15
+      - distance: 50
+        stroke: im
+        rounds: 4
+        msg: order, distance per stroke
+        additional_base: :10
+
+  - msg: Main Set
+    print_full_stats: True
+    rounds: [3, 3, 3, 2]
+    subsets:
+      - distance: [75, 75, 50, 50]
+        stroke: choice
+        rounds: 4
+        msg: 1. 75 easy, 2. 50 easy / 25 fast, 3. 25 easy / 50 fast, 4. 75 fast
+      - distance: [200, 200, 150, 150]
+        stroke: choice
+        rounds: 1
+        additional: -0:10
+        msg: 50 stroke / 50 free
+
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    subsets:
+      - distance: 200
+        rounds: 1
+        msg: scull / swim / drill / swim
+        stroke: choice
