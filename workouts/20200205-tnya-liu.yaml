@@ -1,0 +1,88 @@
+msg: Today's Practice
+print_full_stats: True
+subsets:
+  - msg: Warmup
+    time: '15:00'
+    print_full_stats: True
+    subsets:
+      - distance: 200
+        stroke: free
+        time: :00
+      - distance: 100
+        stroke: im
+        time: :00
+      - distance: 200
+        stroke: free
+        msg: pull
+        time: :00
+      - distance: 100
+        stroke: kick
+        time: :00
+
+  - msg: Pre Set
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: 100
+        rounds: 2
+        stroke: choice
+        additional_base: 0:10
+        msg: kick / swim / drill / swim
+      - distance: 100
+        rounds: 2
+        stroke: choice
+        additional_base: 0:10
+        msg: drill / swim
+      - distance: 100
+        rounds: 2
+        stroke: choice
+        additional_base: 0:10
+        msg: build
+
+  - msg: Main Set
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: [300, 300, 300, 150]
+        stroke: free
+        additional_base: 0:10
+        msg: breathe 3 / 5 / 7 by 25
+      - distance: 50
+        rounds: [6, 6, 6, 3]
+        stroke: choice
+        additional_base: 0:10
+        msg: drill / swim
+      - distance: [200, 200, 200, 100]
+        rounds: 1
+        stroke: free
+        additional_base: 0:10
+        msg: pull
+      - distance: 50
+        rounds: [4, 4, 4, 2]
+        stroke: choice
+        additional_base: 0:10
+        msg: pull, descend
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: kick
+        additional_base: 0:10
+      - distance: 50
+        rounds: [2, 2, 2, 1]
+        stroke: kick
+        additional_base: 0:10
+        msg: kick
+
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    subsets:
+      - distance: 25
+        rounds: [8, 8, 4, 8]
+        stroke: choice
+        msg: odds - max underwater, even - backstroke
+        additional: 0:30
+      - distance: 200
+        rounds: 1
+        stroke: choice
+        msg: drill / swim
+        additional: 0:30

@@ -1,0 +1,89 @@
+msg: Today's Practice
+print_full_stats: True
+subsets:
+  - msg: Warmup
+    time: '15:00'
+    print_full_stats: True
+    subsets:
+      - distance: 200
+        stroke: free
+        time: :00
+      - distance: 100
+        stroke: im
+        time: :00
+      - distance: 200
+        stroke: free
+        msg: pull
+        time: :00
+      - distance: 100
+        stroke: kick
+        time: :00
+
+  - msg: Preset
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: 200
+        stroke: im
+        additional: 0:15
+        msg: drill / swim
+      - distance: 50
+        rounds: 2
+        stroke: choice
+        additional: 0:10
+        msg: build
+      - distance: 25
+        rounds: 4
+        stroke: choice
+        additional: 0:10
+        msg: 1. fast / ez 2. ez / fast 3. ez 4. fast
+
+  - msg: Main Set
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: [200, 200, 200, 150]
+        rounds: 1
+        stroke: free
+        additional_base: 0:05
+      - distance: 25
+        rounds: 2
+        stroke: choice
+        additional: 0:10
+        msg: 1 easy / 1 fast
+      - distance: [150, 150, 150, 100]
+        rounds: 3
+        stroke: free
+        additional_base: 0:05
+      - distance: 25
+        rounds: 4
+        stroke: choice
+        additional: 0:10
+        msg: 1 easy / 1 fast
+      - distance: [100, 100, 100, 50]
+        rounds: 5
+        stroke: free
+        additional_base: 0:05
+      - distance: 25
+        rounds: 6
+        stroke: choice
+        additional: 0:10
+        msg: 1 easy / 2 fast
+      - distance: 50
+        rounds: [7, 7, 0, 0]
+        stroke: free
+        additional_base: 0:05
+      - distance: 25
+        rounds: [8, 0, 0, 0]
+        stroke: choice
+        additional: 0:10
+        msg: 1 easy / 3 fast
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    subsets:
+      - distance: 100
+        rounds: 3
+        stroke: choice
+        msg: drill / swim
+        additional: 0:30
