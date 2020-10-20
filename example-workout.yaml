@@ -1,17 +1,18 @@
-msg: Today's Practice
+msg: 'TNYA - Sacred Heart - Tues 2020-10-05'
 print_full_stats: True
 subsets:
   - msg: Warmup
-    time: '15:00'
+    time: 15:00
     print_full_stats: True
+    rounds: 1
     subsets:
       - distance: 300
         stroke: free
         time: :00
       - distance: 100
-        rounds: 2
-        stroke: kick
-        msg: / swim
+        rounds: 3
+        stroke: choice
+        msg: kick/swim/drill/swim
         time: :00
       - distance: 50
         rounds: 4
@@ -23,6 +24,10 @@ subsets:
     print_full_stats: True
     rounds: 2
     subsets:
+      - distance: 100
+        stroke: choice
+        msg: 50 kick / 50 swim
+        additional_base: 0:20
       - distance: 50
         stroke: choice
         rounds: 4

@@ -1,0 +1,128 @@
+msg: 'TNYA - Sacred Heart - Tues 2020-10-05'
+print_full_stats: True
+subsets:
+  - msg: Warmup
+    time: 15:00
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: 300
+        stroke: free
+        time: :00
+      - distance: 100
+        rounds: 3
+        stroke: choice
+        msg: kick/swim/drill/swim
+        time: :00
+      - distance: 50
+        rounds: 4
+        stroke: free
+        msg: pull
+        time: :00
+
+  - msg: Preset
+    print_full_stats: True
+    rounds: 3
+    subsets:
+      - distance: 100
+        stroke: choice
+        msg: 50 kick / 50 swim
+        additional_base: 0:20
+      - distance: 50
+        stroke: choice
+        msg: 25 drill / 25 swim
+        additional_base: 0:20
+      - distance: 100
+        stroke: choice
+        msg: swim
+        additional_base: 0:10
+      - distance: 50
+        stroke: choice
+        msg: build to fast
+        additional_base: 0:35
+
+  - msg: Pull set
+    print_full_stats: True
+    rounds: 2
+    subsets:
+      - distance: 100
+        rounds: 3
+        stroke: choice
+        msg: build pull
+        additional_base: 0:10
+      - distance: 50
+        rounds: 3
+        stroke: choice
+        msg: 1 fast / 1 EZ / 1 fast
+        additional_base: 0:20
+
+  - msg: Main Set
+    print_full_stats: True
+    rounds: 2
+    subsets:
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: free
+        additional_base: 0:25
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: free
+        additional_base: 0:20
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: free
+        additional_base: 0:15
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: free
+        additional_base: 0:10
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: free
+        additional_base: 0:05
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: free
+      - distance: 50
+        stroke: free
+        additional_base: 1:00
+
+  - msg: Main Set
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: choice
+        additional_base: 0:25
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: choice
+        additional_base: 0:20
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: choice
+        additional_base: 0:15
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: choice
+        additional_base: 0:10
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: choice
+        additional_base: 0:05
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: choice
+      - distance: 50
+        stroke: free
+        additional_base: 1:00
+
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    subsets:
+      - distance: 50
+        rounds: 4
+        msg: Odds - 3 turn; evens - scull/swim
+        time: [1:00, 1:05, 1:10, 1:15]
