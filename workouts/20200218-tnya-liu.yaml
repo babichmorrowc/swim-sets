@@ -1,0 +1,89 @@
+msg: Today's Practice
+print_full_stats: True
+subsets:
+  - msg: Warmup
+    time: '15:00'
+    print_full_stats: True
+    subsets:
+      - distance: 300
+        stroke: free
+        time: :00
+      - distance: 100
+        rounds: 2
+        stroke: kick
+        msg: / swim
+        time: :00
+      - distance: 50
+        rounds: 4
+        stroke: free
+        msg: pull
+        time: :00
+
+  - msg: 'Preset'
+    print_full_stats: True
+    subsets:
+      - distance: 100
+        stroke: free
+        msg: feet past flags on all turns
+        additional_base: :10
+        rounds: 2
+      - distance: 75
+        stroke: choice
+        msg: kick / drill / swim
+        additional_base: :15
+        rounds: 2
+      - distance: 50
+        stroke: free
+        rounds: 2
+        msg: 3 turn
+        additional_base: :10
+      - distance: 25
+        stroke: choice
+        msg: push off the wall as long as possible
+        additional: :20
+        rounds: 4
+
+  - msg: Main Set
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: [100, 100, 100, 75]
+        rounds: 4
+        stroke: free
+        additional_base: 0:10
+        msg: DPS
+      - distance: [100, 100, 100, 75]
+        rounds: 4
+        stroke: free
+        additional_base: 0:05
+        msg: 40 strong / 60 fast
+      - distance: [75, 75, 75, 50]
+        rounds: 4
+        stroke: choice
+        additional_base: 0:10
+        msg: DPS
+      - distance: [75, 75, 75, 50]
+        rounds: 4
+        stroke: choice
+        additional_base: 0:05
+        msg: 25 build / 50 fast
+      - distance: [50, 0, 0, 0]
+        rounds: 4
+        stroke: choice
+        additional_base: 0:10
+        msg: DPS descend 1-4
+      - distance: [50, 0, 0, 0]
+        rounds: 4
+        stroke: choice
+        additional_base: 0:05
+        msg: fast hold stroke count
+
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    subsets:
+      - distance: 50
+        rounds: 4
+        stroke: choice
+        msg: odds - scull / swim, evens - drill / swim
+        additional: 0:30

@@ -1,0 +1,104 @@
+msg: Today's Practice
+print_full_stats: True
+subsets:
+  - msg: Warmup
+    time: '15:00'
+    print_full_stats: True
+    subsets:
+      - distance: 300
+        stroke: free
+        time: :00
+      - distance: 100
+        rounds: 2
+        stroke: kick
+        msg: / swim
+        time: :00
+      - distance: 50
+        rounds: 4
+        stroke: free
+        msg: pull
+        time: :00
+
+  - msg: Pre Set
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: 50
+        rounds: 4
+        stroke: choice
+        msg: descend 1-4
+        additional: 0:05
+      - distance: 25
+        rounds: 4
+        stroke: choice
+        msg: variable
+        additional: 0:10
+
+  - msg: Main Set
+    print_full_stats: True
+    rounds: 1
+    subsets:
+      - distance: [100, 100, 100, 50]
+        rounds: 2
+        stroke: free
+        additional_base: 0:15
+      - distance: [100, 100, 100, 50]
+        rounds: 2
+        stroke: free
+        additional_base: 0:10
+      - distance: [100, 100, 100, 50]
+        rounds: 2
+        stroke: free
+        additional_base: 0:05
+      - distance: [100, 100, 100, 50]
+        rounds: 2
+        stroke: free
+        additional_base: 0:00
+      - distance: [100, 100, 100, 50]
+        rounds: 2
+        stroke: free
+        additional_base: -0:05
+      - distance: 0
+        time: 1:00
+      - distance: [100, 100, 100, 50]
+        rounds: 1
+        stroke: free
+        additional_base: -0:10
+      - distance: 0
+        time: 1:00
+      - distance: 50
+        rounds: 2
+        stroke: stroke
+        additional: 0:20
+      - distance: 50
+        rounds: 2
+        stroke: stroke
+        additional: 0:15
+      - distance: 50
+        rounds: 2
+        stroke: stroke
+        additional: 0:10
+      - distance: 50
+        rounds: 2
+        stroke: stroke
+        additional: 0:05
+      - distance: 50
+        rounds: 2
+        stroke: stroke
+        additional: 0:00
+      - distance: 0
+        time: 1:00
+      - distance: 50
+        rounds: 1
+        stroke: stroke
+        additional: -0:05
+
+
+  - msg: Post Set (if time permits)
+    print_full_stats: True
+    subsets:
+      - distance: 100
+        rounds: 3
+        stroke: choice
+        msg: 1 - kick / swim, 2 - drill / swim, 3 - swim
+        additional: 0:30
